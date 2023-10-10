@@ -9,6 +9,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  font-size: 1.2rem;
 }
 
 /* Estilo das perguntas */
@@ -46,23 +47,6 @@
   margin-bottom: 20px;
 }
 
-/* Consulta de mídia para telas de notebook (768px) até telas maiores */
-@media (min-width: 768px) {
-  .CloudImage {
-    max-width: 80%; /* Define a largura máxima como 80% da largura da tela para notebooks */
-  }
-
-  .card-product {
-    font-size: 20px; /* Aumenta o tamanho da fonte para telas maiores */
-  }
-}
-
-/* Consulta de mídia para telas maiores, como monitores de desktop widescreen (por exemplo, 1200px) */
-@media (min-width: 1200px) {
-  .CloudImage {
-    max-width: 100%; /* Define a largura máxima como 60% da largura da tela para telas maiores */
-  }
-}
 
 /* Estilos do botão de início */
 .BotaoIniciarWrapper {
@@ -127,4 +111,46 @@
   padding: 20px;
   margin: 20px;
   border-radius: 15px;
+}
+
+/* Estilo padrão para dispositivos menores */
+.CloudImage {
+  background-size: cover;
+  background-position: center;
+}
+
+/* Consulta de mídia para telas de celular (até 767px) */
+@media (max-width: 767px) {
+  .CloudImage {
+    height: 400px;
+  }
+}
+
+@media (max-width: 767px) {
+  .BotaoIniciar {
+    height: 40px;
+    padding: 10px 20px;
+  }
+}
+
+/* Consulta de mídia para telas de notebook (768px) até telas maiores */
+@media (min-width: 768px) {
+  .CloudImage {
+    max-width: 80%;
+  }
+
+  .CloudSection {
+    font-size: 1.5rem;
+  }
+
+  .card-product {
+    font-size: 20px;
+  }
+}
+
+/* Consulta de mídia para telas maiores, como monitores de desktop widescreen (1200px) */
+@media (min-width: 1200px) {
+  .CloudImage {
+    max-width: 100%;
+  }
 }
