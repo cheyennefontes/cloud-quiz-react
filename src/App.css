@@ -1,0 +1,130 @@
+.App {
+  text-align: center;
+}
+
+/* Estilo da seção da nuvem */
+.CloudSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Estilo das perguntas */
+.TextoPergunta {
+  font-size: 20px;
+  line-height: 1.4;
+  opacity: 0.7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+/* Estilo dos botões */
+.Botao {
+  font-size: 1rem;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #343a40; /* Cor de fundo escura */
+  color: white; /* Cor do texto branca */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+}
+
+.Botao:hover {
+  background-color: #1d2124; /* Cor de fundo mais escura quando o botão é destacado */
+}
+
+/* Estilo padrão para dispositivos menores */
+.CloudImage {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Consulta de mídia para telas de notebook (768px) até telas maiores */
+@media (min-width: 768px) {
+  .CloudImage {
+    max-width: 80%; /* Define a largura máxima como 80% da largura da tela para notebooks */
+  }
+
+  .card-product {
+    font-size: 20px; /* Aumenta o tamanho da fonte para telas maiores */
+  }
+}
+
+/* Consulta de mídia para telas maiores, como monitores de desktop widescreen (por exemplo, 1200px) */
+@media (min-width: 1200px) {
+  .CloudImage {
+    max-width: 100%; /* Define a largura máxima como 60% da largura da tela para telas maiores */
+  }
+}
+
+/* Estilos do botão de início */
+.BotaoIniciarWrapper {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.BotaoIniciar {
+  background-color: white;
+  color: #66a5e9;
+  padding: 20px 40px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.BotaoIniciar:hover {
+  background-color: #d3dee9;
+}
+
+/* Estilos de mensagens de erro e estatísticas */
+.Erro, .Erros {
+  color: red;
+  font-size: 18px;
+  line-height: 1.4;
+  opacity: 0.7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.Acertos {
+  color: green;
+  font-size: 18px;
+  line-height: 1.4;
+  opacity: 0.7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+/* Estilo da resposta correta */
+.RespostaCorreta {
+  font-size: 20px;
+  line-height: 1.4;
+  opacity: 0.7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.card-product {
+  overflow: hidden;
+  height: 100%;
+  background: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 15px;
+}
