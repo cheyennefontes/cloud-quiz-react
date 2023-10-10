@@ -13,13 +13,21 @@
   margin-right: 15px;
 }
 
-.Navbar-links {
-  display: flex;
-  align-items: center;
-}
 
 .Navbar-links a {
-  color: white;
+  color: #333;
   text-decoration: none;
   margin-right: 15px;
+}
+
+.Navbar-links {
+  color: #333; /* Cor do texto dos links */
+  text-decoration: none; /* Remover sublinhado dos links */
+  margin-right: 20px; /* Espaçamento entre os links */
+  font-weight: bold; /* Deixar o texto em negrito */
+  transition: color 0.3s ease; /* Adicionar transição suave para a cor do texto ao passar o mouse */
+}
+
+.Navbar-link:hover {
+  color: #00c2cb; /* Mudar a cor do texto ao passar o mouse sobre o link */
 }

@@ -1,0 +1,28 @@
+.estatisticas-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 125px;
+  height: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+
+.estatisticas-content {
+  font-size: 18px;
+  color: black;
+  text-align: center;
+}
+
+.errosEstatistica {
+  color: red;
+}
+
+.acertosEstatistica {
+  color:green
+}
