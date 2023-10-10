@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-/* Estilo da seção da nuvem */
+/* Estilo Banner*/
 .CloudSection {
   display: flex;
   flex-direction: column;
@@ -26,8 +26,8 @@
   font-size: 1rem;
   padding: 10px 20px;
   margin-top: 10px;
-  background-color: #343a40; /* Cor de fundo escura */
-  color: white; /* Cor do texto branca */
+  background-color: #343a40;
+  color: white;
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -36,10 +36,9 @@
 }
 
 .Botao:hover {
-  background-color: #1d2124; /* Cor de fundo mais escura quando o botão é destacado */
+  background-color: #1d2124;
 }
 
-/* Estilo padrão para dispositivos menores */
 .CloudImage {
   width: 100%;
   max-width: 1000px;
@@ -51,27 +50,29 @@
 /* Estilos do botão de início */
 .BotaoIniciarWrapper {
   position: absolute;
-  top: 65%;
+  top: 63.5%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .BotaoIniciar {
-  background-color: white;
-  color: #66a5e9;
+  background-color: #00c2cb;
+  color: white;
+  font-family: "Jazz LET, fantasy";
   padding: 20px 40px;
-  font-size: 1rem;
+  font-size: 2rem;
   border: none;
   border-radius: 25px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);;
 }
 
 .BotaoIniciar:hover {
   background-color: #d3dee9;
 }
 
-/* Estilos de mensagens de erro e estatísticas */
+/* Estilos de mensagens de erro */
 .Erro, .Erros {
   color: red;
   font-size: 18px;
@@ -113,7 +114,6 @@
   border-radius: 15px;
 }
 
-/* Estilo padrão para dispositivos menores */
 .CloudImage {
   background-size: cover;
   background-position: center;
@@ -130,6 +130,7 @@
   .BotaoIniciar {
     height: 40px;
     padding: 10px 20px;
+    font-size: 15px;
   }
 }
 
